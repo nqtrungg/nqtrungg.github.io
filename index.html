@@ -1,13 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nqtrungg.github.io</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nguyễn Quang Trung — Data Analyst, Data Scientist and AI Engineer portfolio.">
+  <title>Nguyễn Quang Trung — Data & AI Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="site-header">
+    <a class="monogram" href="#top" aria-label="Nguyễn Quang Trung — Home">NQT<span>.</span></a>
+    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="header-cta" href="#contact">Let's talk <span class="arrow small">↗</span></a>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+    <p class="eyebrow"><span></span> Based in Ho Chi Minh City, Vietnam</p>
+    <h1>Nguyễn Quang<br><em>Trung</em></h1>
+    <div class="hero-bottom">
+      <p class="role">Data Analyst <b>•</b> Data Scientist <b>•</b> AI Engineer</p>
+      <div class="hero-intro"><p>Turning data into actionable insights through dashboards, analytics and AI solutions.</p>
+        <div class="button-row"><a class="button primary" href="#work">View projects <span>↓</span></a><a class="button secondary" href="#contact" title="CV will be added later">Download CV <span>↘</span></a></div>
+      </div>
+    </div>
+    <div class="scroll-note" aria-hidden="true"><span>Scroll to explore</span><i></i></div>
+  </section>
+
+  <section class="section projects" id="work">
+    <div class="section-heading"><div><span class="section-number">01</span><p class="kicker">Selected work</p></div><h2>Featured <em>Projects</em></h2><p>A selection of projects where data, business context and thoughtful design come together.</p></div>
+    <article class="project-card">
+      <div class="project-copy">
+        <div class="project-topline"><span>Featured case study</span><span>2026</span></div>
+        <h3>E-Commerce<br>Operations<br>Dashboard</h3>
+        <div class="tags"><span>Power BI</span><span>SQL</span><span>Python</span></div>
+        <dl><div><dt>Business problem</dt><dd>Fragmented marketplace data made it difficult to track delivery performance, revenue health and customer experience.</dd></div><div><dt>Business solution</dt><dd>Built an end-to-end analytics workflow and executive dashboard that turns operational signals into clear, actionable decisions.</dd></div></dl>
+        <a class="text-link" href="https://github.com/nqtrungg" target="_blank" rel="noreferrer">View project <span class="arrow">↗</span></a>
+      </div>
+      <div class="dashboard-preview" aria-label="Stylized preview of the E-Commerce Operations Dashboard">
+        <div class="dash-shell"><div class="dash-sidebar"><b>NQT.</b><span></span><span></span><span></span><span></span><i></i></div>
+          <div class="dash-content"><div class="dash-title"><div><small>OPERATIONS OVERVIEW</small><strong>E-Commerce Performance</strong></div><button>2024 ▾</button></div>
+            <div class="metric-row"><div><small>Total Revenue</small><b>$15.8M</b><em>↑ 12.4%</em></div><div><small>Total Orders</small><b>96.5K</b><em>↑ 8.7%</em></div><div><small>Avg. Order Value</small><b>$163.72</b><em>↑ 3.2%</em></div></div>
+            <div class="chart-row"><div class="line-chart"><small>Revenue trend</small><div class="grid-lines"></div><svg viewBox="0 0 420 150" role="img" aria-label="Revenue trend rising over time"><path d="M0 130 C45 118,55 70,100 92 S155 120,190 68 S260 90,285 48 S350 66,420 12" fill="none" stroke="currentColor" stroke-width="4"/><path d="M0 130 C45 118,55 70,100 92 S155 120,190 68 S260 90,285 48 S350 66,420 12 L420 150 L0 150Z" fill="rgba(49,87,213,.12)"/></svg></div><div class="donut-card"><small>Order status</small><div class="donut"><span>94<small>%</small></span></div><p><i></i> Delivered</p><p><i></i> Other</p></div></div>
+            <div class="bar-card"><small>Top product categories</small><div class="bars"><span style="height:48%"></span><span style="height:62%"></span><span style="height:45%"></span><span style="height:84%"></span><span style="height:70%"></span><span style="height:96%"></span><span style="height:78%"></span><span style="height:90%"></span></div></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="section skills-section">
+    <div class="section-heading compact"><div><span class="section-number">02</span><p class="kicker">Toolkit</p></div><h2>Technical <em>Skills</em></h2></div>
+    <div class="skill-grid"><div class="skill"><span>01</span>Python</div><div class="skill"><span>02</span>SQL</div><div class="skill"><span>03</span>Power BI</div><div class="skill"><span>04</span>Excel</div><div class="skill"><span>05</span>Pandas</div><div class="skill"><span>06</span>PyTorch</div><div class="skill"><span>07</span>TensorFlow</div><div class="skill"><span>08</span>Tableau</div><div class="skill"><span>09</span>Git</div><div class="skill"><span>10</span>Streamlit</div></div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="section-heading compact light"><div><span class="section-number">03</span><p class="kicker">A little about me</p></div><h2>Curious by nature.<br><em>Analytical by choice.</em></h2></div>
+    <div class="about-grid"><p class="about-lead">I bridge the gap between complex data and clear business decisions.</p><div class="about-body"><p>With a foundation in Artificial Intelligence and hands-on experience in analytics, I build solutions that are technically sound, visually intuitive and grounded in real business needs.</p><p>I enjoy owning the full journey—from cleaning messy datasets and asking the right questions to building models and telling the story through thoughtful dashboards.</p></div></div>
+    <div class="education"><p class="kicker">Education</p><div class="education-row"><span>2024</span><div><h3>Master of Software Engineering — Artificial Intelligence</h3><p>FPT School of Business & Technology</p></div></div><div class="education-row"><span>2023</span><div><h3>Bachelor of Artificial Intelligence</h3><p>FPT University</p></div></div></div>
+  </section>
+
+  <footer id="contact"><p class="kicker">Have a project in mind?</p><h2>Let's turn data<br>into <em>direction.</em></h2><a class="footer-email" href="mailto:hello@example.com">hello@example.com <span class="arrow">↗</span></a><div class="footer-bottom"><p>© 2026 Nguyễn Quang Trung</p><div><a href="https://github.com/nqtrungg" target="_blank" rel="noreferrer">GitHub <span class="arrow small">↗</span></a><a href="#contact">LinkedIn <span class="arrow small">↗</span></a><a href="mailto:hello@example.com">Email <span class="arrow small">↗</span></a></div><a href="#top">Back to top ↑</a></div></footer>
+</main>
+</body>
 </html>
