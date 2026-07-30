@@ -53,6 +53,11 @@ dt { font-size:10px; text-transform:uppercase; font-weight:800; letter-spacing:.
 dd { margin:0; color:var(--muted); font-size:13px; line-height:1.65; }
 .text-link { margin-top:auto; width:max-content; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.09em; border-bottom:1px solid; padding-bottom:6px; }
 .dashboard-preview { background:var(--blue); padding:6vw 0 6vw 4vw; display:flex; align-items:center; overflow:hidden; }
+.dashboard-preview.cover-preview { padding:0; background:#07162f; justify-content:center; position:relative; }
+.cover-preview img { width:100%; height:100%; object-fit:contain; display:block; transition:transform .35s ease, opacity .35s ease; }
+.cover-preview:after { content:"View case study ↗"; position:absolute; right:24px; bottom:24px; background:#fff; color:#101827; padding:12px 15px; font-size:10px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; opacity:0; transform:translateY(8px); transition:.25s ease; }
+.cover-preview:hover img { transform:scale(1.015); opacity:.92; }
+.cover-preview:hover:after { opacity:1; transform:translateY(0); }
 .dash-shell { background:#eef0f5; width:780px; min-width:680px; height:505px; display:flex; box-shadow:0 28px 70px rgba(9,20,61,.3); transform:perspective(1100px) rotateY(-4deg); transform-origin:left; color:#17213a; }
 .dash-sidebar { width:76px; background:#121b35; color:white; padding:24px 18px; display:flex; flex-direction:column; gap:22px; align-items:center; }
 .dash-sidebar b { font-size:12px; margin-bottom:18px; }
