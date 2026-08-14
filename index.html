@@ -7,13 +7,43 @@
   <meta name="theme-color" content="#f4f1ea">
   <title>Quang Trung Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Compact layout adjustments */
+    .projects .section-heading h2{font-size:clamp(40px,6vw,76px);line-height:.94}
+    .about-section .section-heading h2{font-size:clamp(34px,4.8vw,62px);line-height:1}
+    .about-lead{font-size:clamp(18px,2vw,27px);line-height:1.45}
+    .about-body p{font-size:14px;line-height:1.7}
+    footer h2{font-size:clamp(40px,6.5vw,82px);line-height:.94}
+    .footer-email{font-size:clamp(20px,3vw,36px)}
+
+    .project-card{min-height:0;height:auto;align-items:stretch}
+    .project-cover{height:auto;min-height:0;aspect-ratio:9/8}
+    .project-cover img{width:100%;height:100%;object-fit:cover}
+    .project-content{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+    .project-content h3{font-size:clamp(28px,3.2vw,43px);line-height:.98;margin:16px 0}
+    .stack-row{margin:0 0 16px;gap:6px}
+    .stack-row span{font-size:8px;padding:6px 8px}
+    .project-story{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px;margin:0 0 16px}
+    .project-story>div{padding-top:8px}
+    .project-story h4{font-size:10px;margin:3px 0 4px}
+    .project-story p{font-size:10px;line-height:1.45;margin:0}
+    .project-story>div>span{font-size:8px}
+    .metric-strip{margin-top:0}
+    .metric-strip>div{padding:12px 8px}
+    .metric-strip strong{font-size:clamp(18px,2.1vw,27px)}
+    .metric-strip span{font-size:7px}
+    .project-links{margin-top:16px}
+
+    @media(max-width:900px){.project-content{padding:24px}.project-story{gap:10px 15px}}
+    @media(max-width:620px){.projects .section-heading h2,.about-section .section-heading h2{font-size:12vw}footer h2{font-size:13vw}.project-cover{aspect-ratio:9/8}.project-content{padding:24px 20px}.project-content h3{font-size:30px}.project-story{grid-template-columns:1fr}}
+  </style>
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('nqt-theme')||'light'}catch(e){}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
     <a class="monogram" href="#top" aria-label="Home">NQT<span>.</span></a>
-    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <div class="header-actions">
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5a8.5 8.5 0 1 0 12 12Z"/></svg></button>
       <a class="header-cta" href="#contact">Let's talk <span>↓</span></a>
@@ -27,7 +57,7 @@
       <h1 class="reveal">Nguyen Quang<br><em>Trung</em></h1>
       <div class="hero-bottom reveal">
         <p class="role">Data Analyst <b>•</b> Data Scientist <b>•</b> AI Engineer</p>
-        <div class="hero-intro"><p>Turning data into actionable insights through dashboards, analytics and AI solutions.</p><div class="button-row"><a class="button primary" href="#work">Explore work <span>↓</span></a><a class="button secondary" href="/assets/cv/NGUYEN-QUANG-TRUNG-CV.pdf" download="NGUYEN-QUANG-TRUNG-CV.pdf" type="application/pdf">Download CV <span>↓</span></a></div></div>
+        <div class="hero-intro"><p>Turning data into actionable insights through dashboards, analytics and AI solutions.</p><div class="button-row"><a class="button primary" href="#work">Explore work <span>↓</span></a><a class="button secondary" href="/assets/cv/NGUYEN-QUANG-TRUNG-CV.pdf" download="NGUYEN-QUANG-TRUNG-CV.pdf" type="application/pdf">Download CV <span>↘</span></a></div></div>
       </div>
     </section>
 
@@ -104,7 +134,7 @@
     </section>
   </main>
 
-  <footer id="contact"><div class="footer-kicker"><span class="section-number">03</span><p class="kicker">Contact</p></div><h2>Let's turn data<br>into <em>direction.</em></h2><div class="contact-lines"><a class="footer-email" href="mailto:lioneltrung10@gmail.com">lioneltrung10@gmail.com <span>↑</span></a><a class="footer-phone" href="tel:+84932638689">(+84) 932 638 689</a></div><div class="social-row"><a href="https://github.com/nqtrungg" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a><a href="https://www.linkedin.com/in/qtrung/" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3.2V19h3.3V8.5ZM4.85 3A1.92 1.92 0 1 0 4.85 6.84 1.92 1.92 0 0 0 4.85 3ZM20.8 13c0-3.17-1.7-4.65-3.96-4.65-1.82 0-2.64 1-3.1 1.7V8.5h-3.3V19h3.3v-5.2c0-1.37.26-2.7 1.96-2.7 1.68 0 1.7 1.57 1.7 2.8V19h3.4v-6Z"/></svg><span>LinkedIn</span></a><a href="mailto:lioneltrung10@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm9 7 7-5H5l7 5Zm0 2.5L5 9.6V17h14V9.6l-7 4.9Z"/></svg><span>Email</span></a></div><div class="footer-bottom"><p>© NQT.</p><a href="#top">Back to top ↑</a></div></footer>
+  <footer id="contact"><div class="footer-kicker"><span class="section-number">03</span><p class="kicker">Contact</p></div><h2>Let's turn data<br>into <em>direction.</em></h2><div class="contact-lines"><a class="footer-email" href="mailto:lioneltrung10@gmail.com">lioneltrung10@gmail.com <span>↗</span></a><a class="footer-phone" href="tel:+84932638689">(+84) 932 638 689</a></div><div class="social-row"><a href="https://github.com/nqtrungg" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a><a href="https://www.linkedin.com/in/qtrung/" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3.2V19h3.3V8.5ZM4.85 3A1.92 1.92 0 1 0 4.85 6.84 1.92 1.92 0 0 0 4.85 3ZM20.8 13c0-3.17-1.7-4.65-3.96-4.65-1.82 0-2.64 1-3.1 1.7V8.5h-3.3V19h3.3v-5.2c0-1.37.26-2.7 1.96-2.7 1.68 0 1.7 1.57 1.7 2.8V19h3.4v-6Z"/></svg><span>LinkedIn</span></a><a href="mailto:lioneltrung10@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm9 7 7-5H5l7 5Zm0 2.5L5 9.6V17h14V9.6l-7 4.9Z"/></svg><span>Email</span></a></div><div class="footer-bottom"><p>© 2026 NQT.</p><a href="#top">Back to top ↑</a></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
